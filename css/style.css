@@ -85,6 +85,18 @@ img {
   color: var(--logo-color);
 }
 
+.contacts-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-wrapper:hover,
+.contacts-wrapper:focus{
+  fill: var(--accent-color);
+}
+
 .nav-link {
   display: block;
   padding-top: 32px;
@@ -119,9 +131,6 @@ img {
 }
 
 .header-mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -198,6 +207,7 @@ img {
 
 /* benefins */
 
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -210,9 +220,21 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .benefits-section{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.icons-wrapper {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .benefits-card{
@@ -249,7 +271,8 @@ img {
 /* works */
 
 .works-title,
-.staf-title {
+.staf-title,
+.clients-title {
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -273,6 +296,38 @@ img {
 
 
 /* staff */
+
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
+    border-radius: 50%;
+    
+}
+
+.socials-icon{
+  fill: #AFB1B8;
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon{
+  fill: #FFFFFF;
+}
+
+.socials-link:hover,
+.socials-link:focus{
+  background-color: var(--accent-color);
+}
 
 .staff-list{
   display: flex;
@@ -315,6 +370,45 @@ img {
   text-align: center;
 }
 
+
+/* Clients */
+
+.clients-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+ .clients-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-icon{
+  fill: #AFB1B8;
+}
+ 
+.logo-icon:hover,
+.logo-icon:focus{
+  fill: var(--accent-color);
+}
+
+.clients-icon-wrapper:hover,
+.clients-icon-wrapper:focus{
+  border: 1px solid var(--accent-color);
+}
+
 /* footer */
 
 .link-footer:hover,
@@ -355,6 +449,42 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
   font-style: normal;
+}
+
+.footer-socials{
+  box-sizing: border-box;
+  width:206px ;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.socials-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-socials-list{
+  display: flex;
+  
+}
+
+.footer-title{
+  padding-bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
 }
 
 /* portfolio */
