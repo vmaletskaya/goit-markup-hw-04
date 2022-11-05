@@ -90,6 +90,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  fill: var(--description-color);
 }
 
 .contacts-wrapper:hover,
@@ -455,9 +456,7 @@ img {
   box-sizing: border-box;
   width:206px ;
   height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  
+ 
 }
 
 .socials-link-footer {
@@ -468,14 +467,27 @@ img {
   height: 44px;
   margin-top: 16px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 
 }
+
+.socials-icon-footer{
+  fill: var(--main-title-color);
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus{
+  background-color: var(--accent-color);
+}
+
+
 
 .footer-socials-list{
   display: flex;
-  
+  gap: 10px;
 }
+
+
 
 .footer-title{
   padding-bottom: 0px;
