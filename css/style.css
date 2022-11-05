@@ -96,7 +96,8 @@ img {
 .contacts-wrapper:hover,
 .contacts-wrapper:focus{
   fill: var(--accent-color);
-}
+} 
+
 
 .nav-link {
   display: block;
@@ -353,6 +354,9 @@ img {
   flex-basis: calc(100 % / 4 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   background-color: var(--main-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 
+  rgba(0, 0, 0, 0.14), 0px 2px 1px 
+  rgba(0, 0, 0, 0.2);
 }
 .staff-name {
   padding-bottom: 10px;
@@ -390,6 +394,8 @@ img {
 }
 
  .clients-logo{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,6 +417,11 @@ img {
 }
 
 /* footer */
+
+.footer .container{
+  display: flex;
+  align-items: baseline;
+} 
 
 .link-footer:hover,
 .link-footer:focus{
@@ -454,8 +465,8 @@ img {
 
 .footer-socials{
   box-sizing: border-box;
-  width:206px ;
-  height: 80px;
+  margin-left: 70px;
+  margin-right: auto;
  
 }
 
@@ -465,7 +476,7 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  margin-top: 16px;
+  
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
@@ -490,7 +501,7 @@ img {
 
 
 .footer-title{
-  padding-bottom: 0px;
+  margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -531,6 +542,7 @@ img {
 .btn-works:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)
 }
 
 .card-set{
@@ -558,6 +570,11 @@ img {
   padding-bottom: 20px;
   border: 1px solid #EEEEEE;
   border-top: none;
+}
+
+.works-card:hover,
+.works-card:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .job-title {

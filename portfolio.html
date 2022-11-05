@@ -42,14 +42,20 @@
           </ul>
         </nav>
         <ul class="header-list list">
-          <li>
+          <li class="contacts-wrapper">
+            <svg class="mail-icon" width="16" height="12">
+              <use href="./img/icons.svg.svg#icon-envelope"></use>
+            </svg>
             <a
               href="mailto:info@devstudio.com"
               class="header-mail link nav-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-wrapper">
+            <svg class="tel-icon" width="16" height="12">
+              <use href="./img/icons.svg.svg#icon-smartphone"></use>
+            </svg>
             <a href="tel:+380961111111" class="header-tel link nav-link"
               >+38 096 111 11 11</a
             >
@@ -60,7 +66,7 @@
     <main>
       <!-- Main Contetnt -->
       <section>
-       <div class="container">
+        <div class="container">
           <h1 class="visually-hidden">Наші роботи</h1>
           <!-- Button -->
           <ul class="list btn-works-wrapper">
@@ -74,7 +80,7 @@
           <ul class="list card-set">
             <li class="works-card">
               <img
-                src="./img/works-img-1.jpg"
+                src="./img/works/works-img-1.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -86,7 +92,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-2.jpg"
+                src="./img/works/works-img-2.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -98,7 +104,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-3.jpg"
+                src="./img/works/works-img-3.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -110,7 +116,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-4.jpg"
+                src="./img/works/works-img-4.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -122,7 +128,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-5.jpg"
+                src="./img/works/works-img-5.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -134,7 +140,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-6.jpg"
+                src="./img/works/works-img-6.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -146,7 +152,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-7.jpg"
+                src="./img/works/works-img-7.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -158,7 +164,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-8.jpg"
+                src="./img/works/works-img-8.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -170,7 +176,7 @@
             </li>
             <li class="works-card">
               <img
-                src="./img/works-img-9.jpg"
+                src="./img/works/works-img-9.jpg"
                 alt="works"
                 width="370"
                 height="294"
@@ -185,34 +191,94 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer footer-section">
+    <footer class="footer">
       <div class="container">
-        <div class="logo-wrapper">
+        <div class="footer-container">
           <a class="logo" href="">Web<span class="logo-footer">Studio</span></a>
+
+          <address class="address-wrapper">
+            <ul class="list">
+              <li class="list-footer">
+                <a
+                  href="https://goo.gl/maps/xZHKxqKx7CFX3MVU"
+                  class="link address link-footer"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="list-footer">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link footer-mail link-footer"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-footer">
+                <a href="tel:+380961111111" class="link footer-tel link-footer"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
-        <address class="address-wrapper">
-          <ul class="list">
-            <li class="list-footer">
+        <div class="footer-socials">
+          <h3 class="footer-title">приєднуйтесь</h3>
+          <ul class="footer-socials-list list">
+            <li class="socials-item-footer">
               <a
-                href="https://goo.gl/maps/xZHKxqKx7CFX3MVU"
-                class="link address link-footer"
+                class="socials-link-footer link"
+                href="https://instagram.com"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
               >
+                <svg class="socials-icon-footer" width="20" height="20">
+                  <use href="./img/icons.svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-footer">
-              <a href="mailto:info@devstudio.com" class="link footer-mail link-footer"
-                >info@devstudio.com</a
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter icon"
               >
+                <svg class="socials-icon-footer" width="20" height="20">
+                  <use href="./img/icons.svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-footer">
-              <a href="tel:+380961111111" class="link footer-tel link-footer"
-                >+38 096 111 11 11</a
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook icon"
               >
+                <svg class="socials-icon-footer" width="20" height="20">
+                  <use href="./img/icons.svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item-footer">
+              <a
+                class="socials-link-footer link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin icon"
+              >
+                <svg class="socials-icon-footer" width="20" height="20">
+                  <use href="./img/icons.svg.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
